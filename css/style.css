@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 45px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #777777;
+    padding-right: 5px;
+    margin: 0;
+}
+
+h4 {
+    color: #AAAAAA;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+}
+
+main {
+    padding: 0 45px;
+}
+
+section.showcase {
+    background-image: url("../img/img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.showcase img {
+    margin: 0 12px;
+}
+
+section.promote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.house-new, .house-sale {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+    width: 256px;
+}
+
+.price-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+}
+
+.price p {
+    color: #888;
+    font-size: 25px;
+    margin: 0;
+}
+
+.label-new p, .label-sale p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.label-new, .label-sale {
+    color: #FFF;
+    border-radius: 10.5px;
+    width: 60px;
+    height: 20px;
+}
+
+.label-new {
+    background-color: #51D275;
+}
+
+.label-sale {
+    background-color: #DC9730;
+}
+
+.description p {
+    color: #555;
+    font-size: 10px;
+    text-align: justify;
+    margin: 12px;
+}
+
+section.categories {
+    margin: 50px 0 60px;
+}
+
+.categories h2 {
+    color: #888;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.categories h3 {
+    color: #FFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding: 26.5px 0;
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.industrial, .modern, .classic {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-industrial {
+    background-image: url("../img/industrial.png");
+    background-position: center;
+    opacity: 50%;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-modern {
+    background-image: url("../img/modern.png");
+    background-position: center;
+    opacity: 50%;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-classic {
+    background-image: url("../img/classic.png");
+    background-position: center;
+    opacity: 50%;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #FFF;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+h5 {
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+.social-media h5 {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.social-media img {
+    padding-right: 7px;
+}
+
+
+@media (max-width: 640px) {
+
+    main {
+        padding: 0 8vw;
+    }
+
+    section.showcase {
+        background-size: 100%;
+        height: 20vh;
+    }
+
+    section.promote {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .house-new, .house-sale {
+        width: 70vw;
+    }
+
+    .house-new img, .house-sale img {
+        width: 70vw;
+    }
+
+    .house-new {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .map {
+        padding-top: 30px;
+    }
+}
